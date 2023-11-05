@@ -23,7 +23,7 @@ public class TeacherController implements UserController<Teacher> {
         return teacherService.getAll();
     }
 
-    public void printAllStudent() {
+    public void printAllTeachers() {
         teacherView.sendOnConsole(getAllTeachers());
 
     }

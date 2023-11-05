@@ -1,6 +1,5 @@
 package less4;
 
-import less3.sem.data.StudentComparator;
 import less4.controller.StudentController;
 import less4.controller.TeacherController;
 import less4.data.Student;
@@ -20,7 +19,8 @@ public class Main {
 
         TeacherController teacherController = new TeacherController();
         teacherController.create("Pushkin", "Alexander", "Sergeevich");
-//        teacherController.create("Lermontov","Michail", "Yurevich");
-        teacherController.getAllTeachers();
+        teacherController.create("Lermontov","Michail", "Yurevich");
+//        teacherController.getAllTeachers();
+        teacherController.printAllTeachers();
     }
 }
